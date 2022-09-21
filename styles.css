@@ -1,0 +1,56 @@
+/* clear any preset browser settings */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body > * {
+    margin: 10px 15px;
+    font-size: large;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    border: 2px dashed gray;
+    margin: 10px 0;
+    font-size: large;
+}
+
+div img {
+    width: 25%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+nav button {
+    padding: 10px 15px;
+    margin: 5px 10px;
+    font-size: large;
+}
+
+select{
+    padding: 15px 20px;
+    font-size: large;
+}
