@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>CrewMate - Order uniform. Easily.</title>
+</head>
+
+<body>
+    <div class="greenLine"></div>
+
+    <header>
+        <h1>CrewMate</h1>
+        <h2>Order uniform. Easily.</h2>
+        <h3 class="date borderRadius"></h3>
+    </header>
+
+    <nav>
+        <button><a href="basket.html">Basket</a></button>
+        <button>Help</button>
+    </nav>
+
+    <section class="basket borderRadius">
+        <div class="groupMenuItems">
+            <a href="basket.html"><img class="basketIcon" src="assets/shopping-cart.png" alt="basket icon"></a>
+            <a href="basket.html"><h4 class="basketAmount"><strong>Basket: 0</strong></h4></a> 
+        </div>
+    </section>
+
+    <section class="grid">
+        <div class="user-details">
+            <form action="">
+                <div class="firstInput">
+                    <label for="userName">Name: </label>
+                    <input type="text" id="userName">
+                </div>
+                <div class="secondInput">
+                    <label for="userDepot">Depot: </label>
+                    <input type="text" id="userDepot">
+                </div>
+            </form>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-1.jpeg" alt="hi vis vest image">
+                <h4 class="productName borderRadius" id="hi-vis-vest">Hi-Vis Vest</h4>
+            </div>
+
+            <div class="sizeOptions">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+            </div>
+
+            <div class="qtyOptions">
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-baseball-cap.jpg" alt="baseball cap image">
+                <h4 class="productName borderRadius" id="baseballcap">Baseball Cap</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="oneSize">One Size Only</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-polo-shirt.jpg" alt="polo shirt image">
+                <h4 class="productName borderRadius" id="poloShirt">Polo Shirt</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-rain-overtrousers.jpg" alt="waterproof overtrousers image">
+                <h4 class="productName borderRadius" id="waterproof-overtrousers">Waterproof Overtrousers</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-raincoat-jacket.jpg" alt="raincoat jacket image">
+                <h4 class="productName borderRadius" id="raincoat-jacket">Raincoat Jacket</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-soft-shell-jacket.jpg" alt="softshell jacket image">
+                <h4 class="productName borderRadius" id="soft-shell-jacket">Softshell Jacket</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-sweatshirt-long-sleeve.jpg" alt="long sleeve sweatshirt image">
+                <h4 class="productName borderRadius" id="long-sleeve-sweatshirt">Long Sleeve Sweatshirt</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-t-shirt.jpg" alt="hi vis t-shirt image">
+                <h4 class="productName borderRadius" id="hi-vis-t-shirt">Hi-Vis T-Shirt</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-trousers.jpg" alt="hi vis trousers image">
+                <h4 class="productName borderRadius" id="hi-vis-trousers">Hi-Vis Trousers</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-woolly-hat.jpg" alt="woolly hat image">
+                <h4 class="productName borderRadius" id="woolly-hat">Woolly Hat</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="oneSize">Small</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-1.jpeg" alt="hi vis vest image">
+                <h4 class="productName borderRadius" id="hiVisVest">Hi-Vis Vest</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-1.jpeg" alt="hi vis vest image">
+                <h4 class="productName borderRadius" id="hiVisVest">Hi-Vis Vest</h4>
+            </div>
+
+            <div class="options">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+
+                <label for="qty">Quantity:</label>
+                <select class="qtyClass borderRadius" name="quantity" id="qty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <button class="addToBasket borderRadius" type="submit">Add to Basket</button>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://www.flaticon.com/free-icons/shopping-basket" title="shopping basket icons">Shopping basket icons created by Freepik - Flaticon</a>
+</body>
+
+</html>
