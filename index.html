@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
     <script src="app.js" defer></script>
-    <title>CrewMate</title>
+    <title>CrewMate - Order uniform. Easily.</title>
 </head>
+
 <body>
+    <div class="greenLine"></div>
+
     <header>
         <h1>CrewMate</h1>
         <h2>Order uniform. Easily.</h2>
+        <h3 class="date borderRadius"></h3>
     </header>
 
     <nav>
-        <button>Order Uniform</button>
+        <button><a href="basket.html">Basket</a></button>
         <button>Help</button>
     </nav>
 
-    <section class="grid">
-        <div class="product">
-            <img src="assets/hi-vis-1.jpeg" alt="">
-            <p>Hi-Vis Vest</p>
-            <select name="size" id="size">
-                <option value="">--Size--</option>
-                <option value="">Small</option>
-                <option value="">Medium</option>
-                <option value="">Large</option>
-                <option value="">XL</option>
-                <option value="">2XL</option>
-                <option value="">3XL</option>
-            </select>
-            <select name="quantity" id="qty">
-                <option value="">--Quantity--</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-        </div>
-        <div class="product">
-            <img src="assets/hi-vis-1.jpeg" alt="">
-            <p>textdadsasd</p>
-        </div>
-        <div class="product">
-            <img src="assets/hi-vis-1.jpeg" alt="">
-            <p>textdadsasd</p>
-        </div>
-        <div class="product">
-            <img src="assets/hi-vis-1.jpeg" alt="">
-            <p>textdadsasd</p>
+    <section class="basket borderRadius">
+        <div class="groupMenuItems">
+            <a href="basket.html"><img class="basketIcon" src="assets/shopping-cart.png" alt="basket icon"></a>
+            <a href="basket.html"><h4 class="basketAmount"><strong>Basket: 0</strong></h4></a> 
         </div>
     </section>
-    
+
+    <section class="grid">
+        <div class="user-details">
+            <form action="">
+                <div class="firstInput">
+                    <label for="userName">Name: </label>
+                    <input type="text" id="userName">
+                </div>
+                <div class="secondInput">
+                    <label for="userDepot">Depot: </label>
+                    <input type="text" id="userDepot">
+                </div>
+            </form>
+        </div>
+
+        <div class="product">
+            <div class="imageTitle">
+                <img src="assets/hi-vis-1.jpeg" alt="hi vis vest image">
+                <h4 class="productName borderRadius" id="hi-vis-vest">Hi-Vis Vest</h4>
+            </div>
+
+            <div class="sizeOptions">
+                <label for="size">Size:</label>
+                <select class="sizeClass borderRadius" name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="2xl">2XL</option>
+                    <option value="3xl">3XL</option>
+                </select>
+            </div>
+    </section>
+
+    <a href="https://www.flaticon.com/free-icons/shopping-basket" title="shopping basket icons">Shopping basket icons created by Freepik - Flaticon</a>
 </body>
+
 </html>
