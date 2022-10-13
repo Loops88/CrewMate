@@ -59,6 +59,7 @@ body > * {
     background-color: rgba(144, 238, 144, 0.514);
     padding: 10px 15px;
     margin-top: 20px;
+    height: 20px;
 }
 
 header {
